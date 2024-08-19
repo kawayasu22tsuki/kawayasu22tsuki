@@ -1,0 +1,11 @@
+name: profile_update
+
+on:
+  schedule:
+    - cron: '45 2 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello world
